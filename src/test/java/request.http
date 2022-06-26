@@ -1,0 +1,11 @@
+### subscribe to eth
+POST http://localhost:8090/api/v1/marketdata/subscribe/XETUSD
+
+### subscribe to btc
+POST http://localhost:8090/api/v1/marketdata/subscribe/XBTUSD2
+
+### unsubscribe to eth
+POST http://localhost:8090/api/v1/marketdata/subscribe/XETUSD
+
+### unsubscribe to btc
+POST http://localhost:8090/api/v1/marketdata/unsubscribe/XBTUSD

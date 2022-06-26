@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<message>
+    <header>
+        <field name="BeginString" tag="8"><![CDATA[FIX.4.4]]></field>
+        <field name="BodyLength" tag="9"><![CDATA[100]]></field>
+        <field name="MsgSeqNum" tag="34"><![CDATA[3]]></field>
+        <field enum="MarketDataSnapshotFullRefresh" name="MsgType" tag="35"><![CDATA[W]]></field>
+        <field name="SenderCompID" tag="49"><![CDATA[LMXBDM]]></field>
+        <field name="SendingTime" tag="52"><![CDATA[20220625-21:05:21.068]]></field>
+        <field name="TargetCompID" tag="56"><![CDATA[jcorderop]]></field>
+    </header>
+    <body>
+        <field enum="EXCHSYMB" name="SecurityIDSource" tag="22"><![CDATA[8]]></field>
+        <field name="SecurityID" tag="48"><![CDATA[100934]]></field>
+        <field name="MDReqID" tag="262"><![CDATA[100934]]></field>
+        <field name="NoMDEntries" tag="268"><![CDATA[2]]></field>
+        <groups name="NoMDEntries" tag="268">
+            <group>
+                <field enum="BID" name="MDEntryType" tag="269"><![CDATA[0]]></field>
+                <field name="MDEntryPx" tag="270"><![CDATA[21189.93]]></field>
+                <field name="MDEntrySize" tag="271"><![CDATA[5]]></field>
+                <field name="MDEntryDate" tag="272"><![CDATA[20220625]]></field>
+                <field name="MDEntryTime" tag="273"><![CDATA[21:05:20.979]]></field>
+            </group>
+            <group>
+                <field enum="OFFER" name="MDEntryType" tag="269"><![CDATA[1]]></field>
+                <field name="MDEntryPx" tag="270"><![CDATA[21204.58]]></field>
+                <field name="MDEntrySize" tag="271"><![CDATA[5]]></field>
+            </group>
+        </groups>
+    </body>
+    <trailer>
+        <field name="CheckSum" tag="10"><![CDATA[000]]></field>
+    </trailer>
+</message>
