@@ -1,0 +1,37 @@
+20220627-11:33:25: Session FIX.4.4:jcorderop->LMXBDM schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20220627-11:33:25: Created session: FIX.4.4:jcorderop->LMXBDM
+20220627-11:33:25: Configured socket addresses for session: [fix-marketdata.london-demo.lmax.com/91.215.166.66:443]
+20220627-11:33:25: MINA session created: local=/192.168.1.135:60984, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=fix-marketdata.london-demo.lmax.com/91.215.166.66:443
+20220627-11:33:26: Initiated logon request
+20220627-11:33:26: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20220627-11:33:26: Received logon
+20220627-13:18:59: Initiated logout request
+20220627-13:18:59: Received logout response
+20220627-13:18:59: Disconnecting: Received logout response
+20220627-14:58:40: Session FIX.4.4:jcorderop->LMXBDM schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20220627-14:58:40: Created session: FIX.4.4:jcorderop->LMXBDM
+20220627-14:58:40: Configured socket addresses for session: [fix-marketdata.london-demo.lmax.com/91.215.166.66:443]
+20220627-14:58:40: MINA session created: local=/192.168.1.135:50073, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=fix-marketdata.london-demo.lmax.com/91.215.166.66:443
+20220627-14:58:41: Initiated logon request
+20220627-14:58:41: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20220627-14:58:41: Received logon
+20220627-15:02:59: Initiated logout request
+20220627-15:02:59: Received logout response
+20220627-15:02:59: Disconnecting: Received logout response
+20220627-15:06:49: Session FIX.4.4:jcorderop->LMXBDM schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20220627-15:06:49: Created session: FIX.4.4:jcorderop->LMXBDM
+20220627-15:06:49: Configured socket addresses for session: [fix-marketdata.london-demo.lmax.com/91.215.166.66:443]
+20220627-15:06:49: MINA session created: local=/192.168.1.135:51611, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=fix-marketdata.london-demo.lmax.com/91.215.166.66:443
+20220627-15:06:50: Initiated logon request
+20220627-15:06:50: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20220627-15:06:50: Received logon
+20220627-15:11:32: Initiated logout request
+20220627-15:11:32: Received logout response
+20220627-15:11:32: Disconnecting: Received logout response
+20220627-15:11:39: Session FIX.4.4:jcorderop->LMXBDM schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20220627-15:11:39: Created session: FIX.4.4:jcorderop->LMXBDM
+20220627-15:11:39: Configured socket addresses for session: [fix-marketdata.london-demo.lmax.com/91.215.166.66:443]
+20220627-15:11:39: MINA session created: local=/192.168.1.135:52385, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=fix-marketdata.london-demo.lmax.com/91.215.166.66:443
+20220627-15:11:40: Initiated logon request
+20220627-15:11:40: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20220627-15:11:40: Received logon
