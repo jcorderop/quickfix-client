@@ -69,7 +69,7 @@
         <dependency>
             <groupId>org.quickfix</groupId>
             <artifactId>core-components</artifactId>
-            <version>0.0.1</version>
+            <version>0.0.3-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
@@ -109,11 +109,4 @@
         </plugins>
     </build>
 
-    <repositories>
-        <repository>
-            <id>my-repo</id>
-            <name>My Repository</name>
-            <url>file://C:/Users/iorch/.m2/repository</url>
-        </repository>
-    </repositories>
 </project>

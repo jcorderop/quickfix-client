@@ -1,6 +1,5 @@
 package org.quickfix.execution.lmax.client.api;
 
-
 import lombok.extern.slf4j.Slf4j;
 import org.quickfix.core.components.model.rest.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;

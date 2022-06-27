@@ -23,12 +23,4 @@
         <module>execution-lmax</module>
     </modules>
 
-    <repositories>
-        <repository>
-            <id>my-repo</id>
-            <name>My Repository</name>
-            <url>file://C:\Users\iorch\.m2\repository</url>
-        </repository>
-    </repositories>
-
 </project>
