@@ -1,6 +1,7 @@
 HELP.md
 target/
-quickfixj-client.cfg
+quickfixj-ex-client.cfg
+quickfixj-md-client.cfg
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/

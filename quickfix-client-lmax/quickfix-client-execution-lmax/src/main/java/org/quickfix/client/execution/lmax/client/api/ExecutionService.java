@@ -1,4 +1,4 @@
-package org.quickfix.client.marketdata.lmax.client.api;
+package org.quickfix.client.execution.lmax.client.api;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +15,7 @@ import javax.annotation.PostConstruct;
 @RequiredArgsConstructor
 @Slf4j
 @Service
-public class MarketDataService {
+public class ExecutionService {
 
     private final QuickfixConfig quickfixConfig;
     private final SubscriptionConfig subscriptionConfig;

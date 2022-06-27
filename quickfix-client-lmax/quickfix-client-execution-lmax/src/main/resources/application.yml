@@ -1,13 +1,13 @@
 quickfixj:
   client:
-    config: ${QUIICKFIXJ_CLIENT_CONFIG_FILE:classpath:quickfixj-md-client.cfg}
+    config: ${QUIICKFIXJ_CLIENT_CONFIG_FILE:classpath:quickfixj-ex-client.cfg}
     jmx-enabled: true
-    targetCompID: LMXBDM
-    dataDictionaryFile: brokerFixMarketDataGateway-QuickFix-DataDictionary.xml
+    targetCompID: LMXBD
+    dataDictionaryFile: brokerFixTradingGateway-QuickFix-DataDictionary.xml
 
 
 server:
-  port: 8090
+  port: 8091
 
 management:
   endpoint:
@@ -22,7 +22,7 @@ logging:
   level:
     root: INFO
   file:
-    name: logs/md-client.log
+    name: logs/ex-client.log
   pattern:
     file: "%d{${LOG_DATEFORMAT_PATTERN:yyyy-MM-dd HH:mm:ss.SSS}} ${LOG_LEVEL_PATTERN:%5p} ${PID: } --- [%t] %-40.40logger{39} : %replace(%msg){'(\u0001)','|'}%n${LOG_EXCEPTION_CONVERSION_WORD:%rEx{5}}}"
     console: "${CONSOLE_LOG_PATTERN:%clr(%d{${LOG_DATEFORMAT_PATTERN:yyyy-MM-dd HH:mm:ss.SSS}}){faint} %clr(${LOG_LEVEL_PATTERN:%5p}) %clr(${PID: }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %replace(%msg){'(\u0001)','|'}%n${LOG_EXCEPTION_CONVERSION_WORD:%rEx{5}}}"

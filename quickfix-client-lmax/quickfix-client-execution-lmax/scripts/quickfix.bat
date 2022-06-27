@@ -1,5 +1,5 @@
 @echo off
-set file=quickfixj-md-client.cfg
+set file=quickfixj-ex-client.cfg
 echo This will configure %file%
 echo Check if file exist...
 

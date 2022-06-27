@@ -7,7 +7,7 @@
 
     <groupId>org.quickfix.client</groupId>
     <artifactId>quickfix-client-lmax</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>quickfix-client-lmax</name>
     <description>quickfix-client-lmax</description>
 
@@ -18,7 +18,7 @@
     <modules>
         <module>../quickfix-client-core</module>
         <module>quickfix-client-markerdata-lmax</module>
-        <module>quickfix-client-orders-lmax</module>
+        <module>quickfix-client-execution-lmax</module>
     </modules>
 
 </project>

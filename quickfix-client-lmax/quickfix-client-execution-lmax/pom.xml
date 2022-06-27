@@ -11,10 +11,10 @@
     </parent>
 
     <groupId>org.quickfix.client</groupId>
-    <artifactId>quickfix-client-markerdata-lmax</artifactId>
+    <artifactId>quickfix-client-execution-lmax</artifactId>
     <version>0.0.1</version>
-    <name>quickfix-client-markerdata-lmax</name>
-    <description>Quickfix client for marker-data with lmax</description>
+    <name>quickfix-client-execution-lmax</name>
+    <description>Quickfix client for execution with lmax</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

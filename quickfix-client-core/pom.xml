@@ -8,9 +8,9 @@
 		<version>2.7.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.quickfix.client.core</groupId>
+	<groupId>org.quickfix.client</groupId>
 	<artifactId>quickfix-client-core</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>quickfix-client-core</name>
 	<description>quickfix-client-core</description>
 	<properties>
