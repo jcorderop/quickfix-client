@@ -19,4 +19,9 @@ import java.util.Map;
 @ToString
 public class SubscriptionConfig {
   private Map<String, String> tickers;
+
+  public String getSecuritylId(final String ticker) {
+    return getTickers().get(ticker);
+  }
+
 }

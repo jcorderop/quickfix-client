@@ -5,7 +5,7 @@ POST http://localhost:8090/api/v1/marketdata/subscribe/XETUSD
 POST http://localhost:8090/api/v1/marketdata/subscribe/XBTUSD
 
 ### unsubscribe to eth
-POST http://localhost:8090/api/v1/marketdata/subscribe/XETUSD
+POST http://localhost:8090/api/v1/marketdata/unsubscribe/XETUSD
 
 ### unsubscribe to btc
 POST http://localhost:8090/api/v1/marketdata/unsubscribe/XBTUSD

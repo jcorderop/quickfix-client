@@ -1,14 +1,12 @@
 package org.quickfix.execution.lmax.client.api;
 
 import lombok.extern.slf4j.Slf4j;
+import org.quickfix.core.components.model.model.Order;
 import org.quickfix.core.components.model.rest.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import quickfix.SessionNotFound;
 
 import java.text.MessageFormat;
@@ -19,28 +17,25 @@ import java.text.MessageFormat;
 public class ExecutionController {
 
     @Autowired
-    ExecutionService marketDataService;
+    ExecutionService executionService;
 
-    @PostMapping(path = "/new/{ticker}")
-    public ResponseEntity<BaseResponse> execute(@PathVariable("ticker") String ticker) {
-        return subscription(ticker, true);
+    @PostMapping(path = "/new")
+    public ResponseEntity<BaseResponse> executeOrder(@RequestBody Order order) {
+        return createNewOrderSingle(order);
     }
 
-    private ResponseEntity<BaseResponse> subscription(String ticker, boolean subscribe) {
+    private ResponseEntity<BaseResponse> createNewOrderSingle(final Order order) {
         try {
-            if (marketDataService.subscribe(ticker, subscribe)) {
-                if (subscribe) {
-                    return new ResponseEntity<>(new BaseResponse("subscribed ["+ticker+"] accepted!"), HttpStatus.OK);
-                } else {
-                    return new ResponseEntity<>(new BaseResponse("Unsubscribed ["+ticker+"] accepted!"), HttpStatus.OK);
-                }
-
+            if (executionService.newOrderSingle(order)) {
+                return new ResponseEntity<>(new BaseResponse("Order ["+order.orderId()+"] accepted!"), HttpStatus.OK);
             } else {
-                return new ResponseEntity<>(new BaseResponse(MessageFormat.format("Invalid request - {0}", ticker)), HttpStatus.BAD_REQUEST);
+                return new ResponseEntity<>(new BaseResponse("Unexpected error ["+order.orderId()+"] was NOT accepted!"), HttpStatus.OK);
             }
         } catch (SessionNotFound e) {
             e.printStackTrace();
-            return new ResponseEntity<>(new BaseResponse(MessageFormat.format("Error while subscribing - {0}", ticker)), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(new BaseResponse(MessageFormat.format("Error while placing order - {0}",
+                    order.orderId())),
+                    HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 }
