@@ -43,6 +43,11 @@ public class ApplicationMessageCracker extends MessageCracker {
 	}
 
 	@Override
+	public void onMessage(ExecutionReport message, SessionID sessionID) {
+		processMessage(message, sessionID);
+	}
+
+	@Override
 	public void onMessage(Heartbeat message, SessionID sessionID) {
 		processMessage(message, sessionID);
 	}

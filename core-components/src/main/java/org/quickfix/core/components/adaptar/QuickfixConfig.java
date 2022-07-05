@@ -4,10 +4,12 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 
 @Setter
 @Getter
 @ToString
+@Configuration
 public class QuickfixConfig {
     private String targetCompID;
 

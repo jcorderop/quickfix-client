@@ -4,7 +4,7 @@ import lombok.Getter;
 
 @Getter
 public enum Side {
-    BUY(quickfix.field.Side.BUY), SELl(quickfix.field.Side.SELL);
+    BUY(quickfix.field.Side.BUY), SELL(quickfix.field.Side.SELL);
 
     private final char side;
 

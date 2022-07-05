@@ -5,7 +5,7 @@ import quickfix.field.OrdType;
 
 @Getter
 public enum OrderType {
-    MARKET_ORDER(OrdType.MARKET);
+    MARKET(OrdType.MARKET), LIMIT(OrdType.LIMIT);
 
     private final char type;
 

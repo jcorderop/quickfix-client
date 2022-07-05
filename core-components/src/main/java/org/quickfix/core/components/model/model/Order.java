@@ -1,5 +1,7 @@
 package org.quickfix.core.components.model.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -14,12 +16,12 @@ public record Order(String refId,
                     Double limitPrice) {
     public Order {
         Objects.requireNonNull(refId);
-        Objects.requireNonNull(amount);
         Objects.requireNonNull(ticker);
         Objects.requireNonNull(side);
-        Objects.requireNonNull(orderType);
         Objects.requireNonNull(requestTimestamp);
-        if (!Objects.equals(OrderType.MARKET_ORDER, orderType)) {
+        Objects.requireNonNull(orderType);
+        Objects.requireNonNull(amount);
+        if (!Objects.equals(OrderType.MARKET, orderType)) {
             Objects.requireNonNull(limitPrice);
         }
         orderId = String.valueOf(System.nanoTime());

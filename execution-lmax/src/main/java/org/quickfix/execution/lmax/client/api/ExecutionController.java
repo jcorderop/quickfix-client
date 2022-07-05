@@ -21,6 +21,7 @@ public class ExecutionController {
 
     @PostMapping(path = "/new")
     public ResponseEntity<BaseResponse> executeOrder(@RequestBody Order order) {
+        log.info("New SingleOrder: {}",order);
         return createNewOrderSingle(order);
     }
 

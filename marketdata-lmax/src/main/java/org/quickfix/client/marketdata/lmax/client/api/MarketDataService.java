@@ -49,7 +49,7 @@ public class MarketDataService {
         } else {
             return new MarketDataRequest(new MDReqID(symbolId),
                     new SubscriptionRequestType(SubscriptionRequestType.DISABLE_PREVIOUS_SNAPSHOT_UPDATE_REQUEST),
-                    new MarketDepth(0));
+                    new MarketDepth(5));
         }
 
     }

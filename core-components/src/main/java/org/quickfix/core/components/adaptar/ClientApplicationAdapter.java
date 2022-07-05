@@ -35,6 +35,7 @@ public class ClientApplicationAdapter implements Application {
 		try {
 			final String msgType = message.getHeader().getString(MsgType.FIELD);
 			log.info("fromApp: msgType {}", msgType);
+			log.info("{}",messageCracker);
 			messageCracker.crack(message, sessionId);
 		} catch (UnsupportedMessageType | FieldNotFound | IncorrectTagValue e) {
 			log.error(e.getMessage(), e);
