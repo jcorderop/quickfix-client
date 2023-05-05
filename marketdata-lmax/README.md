@@ -1,5 +1,6 @@
 # quickfix-lmax-client
-Quickfix/j lmax client used to subscribe to crypto market-data and order execution.
+
+Quickfix/j lmax client used to subscribe to crypto market-data.
 
 # Getting Started
 
