@@ -21,9 +21,23 @@ it is necessary to add:
 
 Subscription End-Point
 
-    http://localhost:8090/api/v1/marketdata/subscribe/XBTUSD
+    POST http://localhost:8091/api/v1/order/new
 
-* Right now is only available
+* Post Event:
+    
+    Order request:
+    
+    String refId,
+    String ticker,
+    Side side,
+    LocalDateTime requestTimestamp,
+    OrderType orderType,
+    Double amount,
+    String orderId,
+    LocalDateTime orderTimestamp,
+    Double limitPrice
+
+* Currencies available
     - XBTUSD
     - XETUSD
   
