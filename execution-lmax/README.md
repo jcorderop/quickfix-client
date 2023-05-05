@@ -26,7 +26,8 @@ Subscription End-Point
 * Post Event:
     
     Order request:
-    
+
+---
     String refId,
     String ticker,
     Side side,
