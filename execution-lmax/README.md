@@ -23,10 +23,7 @@ Subscription End-Point
 
     POST http://localhost:8091/api/v1/order/new
 
-* Post Event:
-    
-    Order request:
-
+* Post Event New ORDER:
 ---
     String refId,
     String ticker,
